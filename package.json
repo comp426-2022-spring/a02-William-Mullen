@@ -1,0 +1,23 @@
+{
+  "name": "coinflip",
+  "version": "1.0.0",
+  "description": "Simple package that emulates coin flips in several different ways",
+  "main": "flip.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flip": "node flips.js",
+    "flips": "node flips.js",
+    "guess-flip": "node guess-flip.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a02-William-Mullen.git"
+  },
+  "author": "William Mullen",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a02-William-Mullen/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a02-William-Mullen#readme"
+}
