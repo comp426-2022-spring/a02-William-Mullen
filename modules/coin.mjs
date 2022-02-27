@@ -15,6 +15,10 @@
  */
 
 function coinFlip() {
+  let flip = Math.random();
+  if (flip < 0.5)
+    return "tails"
+  return "heads"
 
 }
 
@@ -38,6 +42,13 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
+  results = new String[flips];
+  i = 0;
+  while (i<flips) {
+    results[i] = coinFlip();
+    i++;
+  }
+  return results
 
 }
 
@@ -55,7 +66,18 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-
+  headsNum = 0;
+  tailsNum = 0;
+  array.forEach(element => {
+    if (element = "heads")
+      headsNum++;
+    else
+      tailsNum++;
+  });
+  let dict = new Object()
+  dict["heads"] = headsNum
+  dict["tails"] = tailsNum
+  return dict
 }
 
 /** Flip a coin!
@@ -70,7 +92,15 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
-
+  let dict = new Object()
+  dict["call"] = call
+  let flip = coinFlip()
+  dict["flip"] = flip
+  if (flip == call)
+    dict["result"] = "win"
+  else 
+    dict["result"] = "lose"
+  return dict
 }
 
 
@@ -78,3 +108,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
+export {coinFlip,flipACoin,countFlips,coinFlips};
