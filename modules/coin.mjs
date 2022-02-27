@@ -42,8 +42,8 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  results = new String[flips];
-  i = 0;
+  const results = [];
+  var i = 0;
   while (i<flips) {
     results[i] = coinFlip();
     i++;
@@ -51,6 +51,7 @@ function coinFlips(flips) {
   return results
 
 }
+console.log(coinFlips(7))
 
 /** Count multiple flips
  * 
