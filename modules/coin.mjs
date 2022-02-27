@@ -80,7 +80,6 @@ function countFlips(array) {
   return dict
 }
 
-console.log(countFlips(coinFlips(7)))
 
 /** Flip a coin!
  * 
@@ -104,6 +103,8 @@ function flipACoin(call) {
     dict["result"] = "lose"
   return dict
 }
+
+console.log(flipACoin("tails"))
 
 
 /** Export 
