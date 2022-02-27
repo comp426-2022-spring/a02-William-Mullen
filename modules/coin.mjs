@@ -104,9 +104,6 @@ function flipACoin(call) {
   return dict
 }
 
-console.log(flipACoin("tails"))
-
-
 /** Export 
  * 
  * Export all of your named functions
