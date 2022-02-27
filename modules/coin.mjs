@@ -51,7 +51,6 @@ function coinFlips(flips) {
   return results
 
 }
-console.log(coinFlips(7))
 
 /** Count multiple flips
  * 
@@ -67,10 +66,10 @@ console.log(coinFlips(7))
  */
 
 function countFlips(array) {
-  headsNum = 0;
-  tailsNum = 0;
+  var headsNum = 0;
+  var tailsNum = 0;
   array.forEach(element => {
-    if (element = "heads")
+    if (element == "heads")
       headsNum++;
     else
       tailsNum++;
@@ -80,6 +79,8 @@ function countFlips(array) {
   dict["tails"] = tailsNum
   return dict
 }
+
+console.log(countFlips(coinFlips(7)))
 
 /** Flip a coin!
  * 
