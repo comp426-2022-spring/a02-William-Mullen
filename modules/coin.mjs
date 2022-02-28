@@ -42,7 +42,7 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  const results = [];
+  var results = [];
   var i = 0;
   while (i<flips) {
     results[i] = coinFlip();
